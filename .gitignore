@@ -1,0 +1,29 @@
+# Local Netlify folder
+.netlify
+
+# Local environment and credential files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+credentials*.json
+
+# Unused full-resolution/source screenshots kept locally, never published
+assets/artscene-detail.webp
+assets/cashare.webp
+assets/museum-admin-center.png
+assets/museum-dashboard-activity.webp
+assets/museum-dashboard-overview.webp
+assets/museum-dashboard.webp
+assets/museum-patrons.png
+assets/museum-settings.png
+assets/oto-work.webp
+assets/serve-appointments.png
+assets/serve-edit-appointment.png
+assets/serve-employees.png
+assets/serve-inventory.png
+assets/serve-map.png
+assets/serve-me.webp
+assets/zonar.webp
