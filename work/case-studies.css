@@ -30,7 +30,7 @@
   margin: 16px 0 22px;
   max-width: 760px;
   font-size: clamp(54px, 8vw, 108px);
-  line-height: 0.9;
+  line-height: 0.96;
   letter-spacing: -0.045em;
 }
 
