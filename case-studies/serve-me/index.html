@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Serve Me Case Study | Tehseen Ahmed</title>
+    <meta name="description" content="How a custom marketplace and salon operations platform modeled availability, location search, inventory, and accounting workflows." />
+    <link rel="canonical" href="https://tehseenahmed.me/work/serve-me/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Serve Me Case Study | Tehseen Ahmed" />
+    <meta property="og:description" content="A custom marketplace and salon operations platform built around real staffing, booking, location, inventory, and accounting rules." />
+    <meta property="og:url" content="https://tehseenahmed.me/work/serve-me/" />
+    <meta property="og:image" content="https://tehseenahmed.me/assets/optimized/serve-appointments-card.webp" />
+    <meta property="og:image:alt" content="Serve Me appointment calendar" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://tehseenahmed.me/assets/optimized/serve-appointments-card.webp" />
+    <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../case-studies.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Serve Me Case Study",
+        "description": "How a custom marketplace and salon operations platform modeled real operational rules.",
+        "author": {"@type": "Person", "name": "Tehseen Ahmed", "url": "https://tehseenahmed.me/"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tehseenahmed.me/work/serve-me/"},
+        "image": "https://tehseenahmed.me/assets/optimized/serve-appointments-card.webp"
+      }
+    </script>
+  </head>
+  <body class="case-study-page">
+    <a class="skip-link" href="#case-content">Skip to case study</a>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Tehseen Ahmed home">
+        <span class="brand-mark" aria-hidden="true">TA</span>
+        <span class="brand-copy"><strong>Tehseen Ahmed</strong><small>Senior software engineer</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Case study navigation">
+        <a href="../../index.html#work">All work</a>
+        <a href="../../index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="case-content">
+      <section class="case-hero" aria-labelledby="project-title">
+        <div class="case-hero-copy">
+          <p class="eyebrow">Marketplace and salon operations platform</p>
+          <h1 id="project-title">A booking marketplace that understood real salon operations.</h1>
+          <p class="hero-subcopy">A custom platform for discovering salons, managing the operational work behind bookings, and supporting the workflows off-the-shelf tools could not handle.</p>
+          <div class="case-hero-actions">
+            <a class="button primary" href="#outcome">View outcomes</a>
+            <a class="button secondary" href="../../index.html#contact">Discuss a project</a>
+          </div>
+        </div>
+        <aside class="case-hero-note">
+          <strong>My role</strong>
+          <p>I led the technical direction and personally implemented most backend functionality, with frontend delivery led through the wider team.</p>
+        </aside>
+      </section>
+
+      <div class="case-fact-row" aria-label="Project facts">
+        <div class="case-fact"><strong>6,000+</strong><span>salon listings</span></div>
+        <div class="case-fact"><strong>20-30</strong><span>salons in closed pilot</span></div>
+        <div class="case-fact"><strong>Rules engine</strong><span>availability and booking logic</span></div>
+        <div class="case-fact"><strong>2021-2022</strong><span>primary build</span></div>
+      </div>
+
+      <section class="case-section">
+        <div class="case-split">
+          <div>
+            <span class="case-section-label">The brief</span>
+            <h2>Build around real salon operations, not a simple list of open hours.</h2>
+            <p>Serve Me combined a consumer marketplace with an operations platform for salon owners: booking, employees, services, inventory, POS-related workflows, administration, and accounting requirements in one custom product.</p>
+          </div>
+          <aside class="case-note">
+            <strong>The constraint</strong>
+            <p>The original WordPress direction could not support the required appointment logic or the customized Visma e-conomic integration for Danish VAT and accounting workflows.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-split">
+          <div>
+            <span class="case-section-label">My contribution</span>
+            <h2>Architecture, backend core, and delivery.</h2>
+            <p>My work covered system architecture, database design, booking and authentication backends, marketplace search, operations workflows, integrations, deployment, code review, coordination, and client communication.</p>
+          </div>
+          <ol class="case-list">
+            <li><strong>Availability model</strong>Shifts, breaks, leave, overrides, existing bookings, service eligibility, and duration.</li>
+            <li><strong>Marketplace foundation</strong>PostGIS location search, map browsing, clustering, and listing discovery.</li>
+            <li><strong>Operations platform</strong>Employees, services, inventory, appointments, and administration.</li>
+            <li><strong>Integration edge</strong>POS-related workflows and Visma e-conomic accounting integration.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section-heading">
+          <span class="case-section-label">Engineering focus</span>
+          <h2>Three problems shaped the platform.</h2>
+        </div>
+        <div class="case-grid">
+          <article class="case-card"><p class="case-year">01</p><h3>Availability, not just open hours</h3><p>The booking engine combined staffing, breaks, leave, bookings, service eligibility, and duration to find a valid continuous slot.</p></article>
+          <article class="case-card"><p class="case-year">02</p><h3>National marketplace search</h3><p>PostGIS-backed distance queries supported location-aware discovery across 6,000+ listings, with maps and clustering keeping the experience usable.</p></article>
+          <article class="case-card"><p class="case-year">03</p><h3>Accounting as a product requirement</h3><p>Visma e-conomic and Danish VAT workflows extended the data and service layers beyond the initial marketplace scope.</p></article>
+          <article class="case-card"><p class="case-year">04</p><h3>Two audiences, one system</h3><p>Consumers needed discovery and booking while salon teams needed operational control after the booking was made.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section-heading">
+          <span class="case-section-label">Technology</span>
+          <h2>Purpose-built from interface to database.</h2>
+          <p>A Next.js and React application paired with a NestJS backend and PostgreSQL/PostGIS data model.</p>
+        </div>
+        <div class="case-tech-grid">
+          <article class="case-tech-card"><h3>Frontend</h3><p>Next.js, React, Redux, Ant Design, Google Maps, Supercluster, React Virtualized, Chart.js, and next-i18next.</p></article>
+          <article class="case-tech-card"><h3>Backend</h3><p>NestJS, TypeScript, Node.js, PostgreSQL, PostGIS, TypeORM, Redis, Passport.js, JWT, and Argon2.</p></article>
+          <article class="case-tech-card"><h3>Delivery and services</h3><p>Docker, Heroku, Cloudinary, Twilio, Nodemailer, iCal generation, and Visma e-conomic integration.</p></article>
+        </div>
+        <div class="case-flow" aria-label="Serve Me platform flow">
+          <div><strong>Customers and salons</strong><span>Discovery, profiles, and operations.</span></div>
+          <div><strong>NestJS API</strong><span>Booking, marketplace, employees, and inventory.</span></div>
+          <div><strong>Rules and search</strong><span>Availability, PostGIS, Redis, and accounting workflows.</span></div>
+        </div>
+      </section>
+
+      <section class="case-section">
+        <div class="case-section-heading">
+          <span class="case-section-label">Product evidence</span>
+          <h2>One system, two audiences.</h2>
+          <p>Consumers could find and book a provider. Salon teams could run the schedules, services, staff, and inventory that made each booking possible.</p>
+        </div>
+        <div class="case-gallery">
+          <figure><img src="../../assets/optimized/serve-appointments-card.webp" alt="Serve Me appointment calendar with approved demo data" width="1260" height="680" loading="lazy" decoding="async" /><figcaption><strong>Appointment operations.</strong> Per-employee calendars with varied booking durations.</figcaption></figure>
+          <figure><img src="../../assets/optimized/serve-map-card.webp" alt="Serve Me marketplace map and salon discovery" width="1260" height="680" loading="lazy" decoding="async" /><figcaption><strong>Marketplace discovery.</strong> Search, filters, listing results, and map-based browsing.</figcaption></figure>
+          <figure><img src="../../assets/optimized/serve-employees-card.webp" alt="Serve Me employee services view with approved demo data" width="1260" height="683" loading="lazy" decoding="async" /><figcaption><strong>Employee configuration.</strong> Services and durations connected to staff availability.</figcaption></figure>
+          <figure><img src="../../assets/optimized/serve-inventory-card.webp" alt="Serve Me inventory management view" width="1260" height="681" loading="lazy" decoding="async" /><figcaption><strong>Inventory operations.</strong> Product, brand, quantity, and pricing workflows.</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="case-section case-outcome" id="outcome">
+        <div>
+          <span class="case-section-label">Outcome</span>
+          <h2>Validated in real salon environments.</h2>
+          <p>Serve Me reached a closed pilot with approximately 20-30 salons. It exercised booking, employee management, and inventory workflows alongside existing business systems.</p>
+          <div class="case-proof-grid">
+            <div class="case-proof"><strong>6,000+</strong><span>listings supported with location search</span></div>
+            <div class="case-proof"><strong>20-30</strong><span>salons in the closed pilot</span></div>
+            <div class="case-proof"><strong>Rules engine</strong><span>availability built from operational constraints</span></div>
+          </div>
+        </div>
+        <blockquote class="case-quote">The strongest story is the translation of messy operating rules into a product that both customers and salon teams could use.<small>Evidence combines the case-study record, approved product screenshots, and a published client review.</small></blockquote>
+      </section>
+    </main>
+
+    <footer class="case-footer">
+      <span>Serve Me case study</span>
+      <span><a href="../museum-advocate/">Previous case study: Museum Advocate</a> · <a href="../../index.html#contact">Contact Tehseen</a></span>
+    </footer>
+  </body>
+</html>
