@@ -1,5 +1,6 @@
 # Local Netlify folder
 .netlify
+.DS_Store
 
 # Local environment and credential files
 .env
