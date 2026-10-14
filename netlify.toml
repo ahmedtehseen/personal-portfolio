@@ -1,2 +1,50 @@
 [build]
   publish = "."
+
+[[redirects]]
+  from = "/museum-advocate"
+  to = "/work/museum-advocate/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/museum-advocate/"
+  to = "/work/museum-advocate/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/serve-me"
+  to = "/work/serve-me/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/serve-me/"
+  to = "/work/serve-me/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/infrastructure-planning-platform"
+  to = "/work/infrastructure-planning-platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/infrastructure-planning-platform/"
+  to = "/work/infrastructure-planning-platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/global-infrastructure-map"
+  to = "/work/infrastructure-planning-platform/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/global-infrastructure-map/"
+  to = "/work/infrastructure-planning-platform/"
+  status = 301
+  force = true
