@@ -28,4 +28,4 @@ Then open `http://localhost:8765` in a browser.
 
 ## Deployment
 
-The site is deployed on Netlify. The `.netlify` directory is intentionally ignored because it contains local deployment state.
+The site is deployed on Netlify.
