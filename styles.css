@@ -436,6 +436,7 @@ h1 {
 }
 
 .work-lab,
+.current-work,
 .currently-building,
 .method,
 .proof,
@@ -1051,6 +1052,22 @@ h1 {
   grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
   gap: 22px;
   align-items: stretch;
+}
+
+.current-work-heading {
+  margin-bottom: 34px;
+}
+
+.current-work-heading .eyebrow {
+  color: var(--accent-dark);
+}
+
+.current-work-project {
+  padding: 0;
+}
+
+.shipped-project {
+  padding-top: 22px;
 }
 
 .building-intro,
@@ -1717,6 +1734,7 @@ cite {
   }
 
   .work-lab,
+  .current-work,
   .currently-building,
   .method,
   .proof,
