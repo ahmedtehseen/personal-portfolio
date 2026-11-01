@@ -1,31 +1,34 @@
-const root = document.documentElement;
+document.documentElement.classList.add("js");
 
-const backToTop = document.querySelector(".back-to-top");
 const contactForm = document.querySelector(".contact-form");
 let contactFormStarted = false;
-
-const updateBackToTop = () => {
-  backToTop?.classList.toggle("is-visible", window.scrollY > 720);
-};
-
-updateBackToTop();
-window.addEventListener("scroll", updateBackToTop, { passive: true });
-
 contactForm?.addEventListener("focusin", () => {
   if (contactFormStarted || typeof window.gtag !== "function") return;
   contactFormStarted = true;
   window.gtag("event", "form_start", { form_name: "contact" });
 });
-
 contactForm?.addEventListener("submit", () => {
-  if (typeof window.gtag === "function") {
+  if (typeof window.gtag === "function")
     window.gtag("event", "form_submit", { form_name: "contact" });
-  }
 });
+if (document.body.classList.contains("case-study-page")) {
+  document
+    .querySelectorAll(
+      ".case-section-heading, .case-split > *, .case-card, .case-tech-card, .case-gallery figure, .case-outcome > *",
+    )
+    .forEach((element) => element.setAttribute("data-reveal", ""));
+}
 
-window.addEventListener("pointermove", (event) => {
-  const x = `${event.clientX}px`;
-  const y = `${event.clientY}px`;
-  root.style.setProperty("--mx", x);
-  root.style.setProperty("--my", y);
-});
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("is-in");
+      revealObserver.unobserve(entry.target);
+    }
+  },
+  { rootMargin: "0px 0px -10% 0px", threshold: 0.08 },
+);
+document
+  .querySelectorAll("[data-reveal]")
+  .forEach((element) => revealObserver.observe(element));
