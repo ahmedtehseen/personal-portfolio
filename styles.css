@@ -115,6 +115,7 @@ h3 {
 }
 .nav-links {
   display: flex;
+  align-items: center;
   gap: clamp(1rem, 3vw, 2.5rem);
 }
 .nav-links a {
@@ -194,6 +195,39 @@ main > section {
 }
 .text-action {
   font-weight: 800;
+}
+.button.secondary {
+  box-shadow: inset 0 0 0 2px currentColor;
+}
+.button.secondary:hover {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+}
+.nav-links a.nav-cta {
+  padding: 0.45rem 0.8rem;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.nav-links a.nav-cta:hover {
+  background: #045443;
+  text-decoration-color: transparent;
+}
+.hero-availability {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.25rem;
+  max-width: 52ch;
+  font-size: var(--small);
+  color: var(--muted);
+}
+.hero-availability strong {
+  color: var(--accent);
+}
+.contact-copy .contact-availability {
+  font-size: var(--body);
+  color: #d2d9d2;
+}
+.contact-copy .button {
+  justify-self: start;
 }
 .profile-links {
   display: flex;
@@ -515,6 +549,12 @@ blockquote footer {
   justify-self: start;
   margin-top: 0.75rem;
 }
+.thank-you-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
 .hidden-field {
   display: none;
 }
@@ -543,7 +583,6 @@ blockquote footer {
 }
 .thank-you-page .button {
   justify-self: start;
-  margin-top: 0.5rem;
 }
 .site-footer {
   min-height: 12rem;

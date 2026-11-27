@@ -263,18 +263,22 @@
   color: #d2d9d2;
   font-size: var(--small);
 }
-.case-quote {
+.case-cta {
+  display: grid;
+  gap: 1.25rem;
   padding: clamp(1.5rem, 3vw, 3rem);
   background: var(--dark-ink);
   color: var(--ink);
-  font-size: var(--lead);
-  line-height: 1.4;
 }
-.case-quote small {
-  display: block;
-  margin-top: 1.5rem;
-  color: var(--muted);
-  font-size: var(--small);
+.case-cta h2 {
+  font-size: var(--lead);
+  line-height: 1.1;
+}
+.case-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
 }
 .case-footer {
   display: grid;

@@ -6,6 +6,7 @@
     <title>Message sent | Tehseen Ahmed</title>
     <meta name="description" content="Your message has been sent to Tehseen Ahmed." />
     <meta name="theme-color" content="#eef1ed" />
+    <meta name="robots" content="noindex" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CPH3MHS4ET"></script>
     <script>
@@ -14,6 +15,7 @@
       gtag('js', new Date());
 
       gtag('config', 'G-CPH3MHS4ET');
+      gtag('event', 'generate_lead', { form_name: 'contact' });
     </script>
     <link rel="canonical" href="https://tehseenahmed.me/thank-you" />
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
@@ -23,8 +25,13 @@
     <main class="thank-you-page">
       <p class="thank-you-status">Message received</p>
       <h1>Thanks for reaching out.</h1>
-      <p>I’ll get back to you as soon as I can.</p>
-      <a class="button primary" href="/">Return to the portfolio</a>
+      <p>I usually reply within one business day. If you’d rather talk sooner, pick a time that suits you.</p>
+      <div class="thank-you-actions">
+        <a class="button primary" href="https://cal.com/tehseenahmed/30min" target="_blank" rel="noreferrer">Book a 30-min call</a>
+        <a class="text-action" href="./assets/Tehseen_Ahmed_Resume.pdf" download>Download résumé</a>
+        <a class="text-action" href="/#work">Back to selected work</a>
+      </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
